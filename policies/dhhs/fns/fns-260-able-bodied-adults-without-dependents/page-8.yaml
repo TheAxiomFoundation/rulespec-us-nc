@@ -5,7 +5,7 @@ module:
   source_verification:
     corpus_citation_path: us-nc/manual/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8
   summary: |-
-    "the Department may not set verification standards that target certain participants as a group in a discriminatory manner for more intensive verification"; "Receipt of temporary or permanent disability benefits still require verification other than self-attestation." "If self-attestation is questionable, attempt to verify using all available information before requiring an individual to provide verification of their exemption status." "Individuals must be given at least 10 days to return additional verification of an ABAWD exemption, but only if the self-attestation was questionable or unfitness for work is not obvious."
+    "the Department may not set verification standards that target certain participants as a group in a discriminatory manner for more intensive verification"; "Receipt of temporary or permanent disability benefits still require verification other than self-attestation." "If self-attestation is questionable, attempt to verify using all available information before requiring an individual to provide verification of their exemption status." "Individuals must be given at least 10 days to return additional verification of an ABAWD exemption, but only if the self-attestation was questionable or unfitness for work is not obvious." "After an individual is screened for all exemptions, do not deny or delay an application or recertification due to exemption verification" if the listed non-exemption conditions apply.
 rules:
   - name: additional_abawd_exemption_verification_return_period_days
     kind: parameter
@@ -14,6 +14,11 @@ rules:
     metadata:
       proof:
         atoms:
+          - path: versions[0].effective_from
+            kind: effective_period
+            source:
+              corpus_citation_path: us-nc/manual/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8
+              excerpt: "December 1, 2025"
           - path: versions[0].formula
             kind: amount
             source:
@@ -33,6 +38,11 @@ rules:
     metadata:
       proof:
         atoms:
+          - path: versions[0].effective_from
+            kind: effective_period
+            source:
+              corpus_citation_path: us-nc/manual/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8
+              excerpt: "December 1, 2025"
           - path: versions[0].formula
             kind: condition
             source:
@@ -51,6 +61,11 @@ rules:
     metadata:
       proof:
         atoms:
+          - path: versions[0].effective_from
+            kind: effective_period
+            source:
+              corpus_citation_path: us-nc/manual/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8
+              excerpt: "December 1, 2025"
           - path: versions[0].formula
             kind: condition
             source:
@@ -69,6 +84,11 @@ rules:
     metadata:
       proof:
         atoms:
+          - path: versions[0].effective_from
+            kind: effective_period
+            source:
+              corpus_citation_path: us-nc/manual/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8
+              excerpt: "December 1, 2025"
           - path: versions[0].formula
             kind: condition
             source:
@@ -88,24 +108,20 @@ rules:
     metadata:
       proof:
         atoms:
+          - path: versions[0].effective_from
+            kind: effective_period
+            source:
+              corpus_citation_path: us-nc/manual/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8
+              excerpt: "December 1, 2025"
           - path: versions[0].formula
             kind: condition
             source:
               corpus_citation_path: us-nc/manual/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8
-          - path: versions[0].formula
-            kind: import
-            import:
-              target: us-nc:policies/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8#additional_abawd_exemption_verification_return_period_days
-              output: additional_abawd_exemption_verification_return_period_days
-              hash: sha256:local
     versions:
       - effective_from: '2025-12-01'
         formula: |-
-          additional_abawd_exemption_verification_return_period_days >= 10
-          and (
-            self_attestation_of_abawd_exemption_is_questionable
-            or unfitness_for_work_is_not_obvious
-          )
+          self_attestation_of_abawd_exemption_is_questionable
+          or unfitness_for_work_is_not_obvious
 
   - name: application_or_recertification_may_not_be_denied_or_delayed_due_to_exemption_verification
     kind: derived
@@ -116,6 +132,11 @@ rules:
     metadata:
       proof:
         atoms:
+          - path: versions[0].effective_from
+            kind: effective_period
+            source:
+              corpus_citation_path: us-nc/manual/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8
+              excerpt: "December 1, 2025"
           - path: versions[0].formula
             kind: condition
             source:
