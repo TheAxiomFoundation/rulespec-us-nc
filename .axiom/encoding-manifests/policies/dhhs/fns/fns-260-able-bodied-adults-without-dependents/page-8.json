@@ -1,0 +1,41 @@
+{
+  "applied_files": [
+    {
+      "path": "policies/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8.yaml",
+      "sha256": "72f7576c2e229fa5088865204289bf968947c4d2fcf3edcc50bcddde935e1b80"
+    },
+    {
+      "path": "policies/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8.test.yaml",
+      "sha256": "800119da1fa3aa32e07fd8fd04f233bcdce33d19ad0d6e2e6cc8dd8041877acd"
+    }
+  ],
+  "axiom_encode_git": {
+    "commit": "431861c8312271b168e0055e2213bcfafcecc31a",
+    "dirty_tracked": false,
+    "root": "/private/tmp/axiom-encode-clean-431861c",
+    "version": "0.2.455",
+    "version_commit": "431861c8312271b168e0055e2213bcfafcecc31a"
+  },
+  "axiom_encode_version": "0.2.455",
+  "backend": "codex",
+  "citation": "us-nc/manual/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8",
+  "context_manifest_file": "/tmp/axiom-encode-encodings/_eval_workspaces/codex-gpt-5.5/us-nc-manual-dhhs-fns-fns-260-able-bodied-adults-without-dependents-page-8/workspace/context-manifest.json",
+  "context_manifest_sha256": "16f09d4aeb3b79cba6e935b5e832fd430371b52639e2da62cabb5f68af9f9632",
+  "generated_at": "2026-05-31T15:14:15.352873+00:00",
+  "generated_output_file": "/tmp/axiom-encode-encodings/codex-gpt-5.5/policies/dhhs/fns/fns-260-able-bodied-adults-without-dependents/page-8.yaml",
+  "generated_output_root": "/tmp/axiom-encode-encodings",
+  "generated_output_sha256": "72f7576c2e229fa5088865204289bf968947c4d2fcf3edcc50bcddde935e1b80",
+  "generation_prompt_sha256": "6155c29da1ab756a5ce6009fd1da64423e8a5f495ab10740764a825689abc9b1",
+  "model": "gpt-5.5",
+  "run_id": "5c35c13e",
+  "runner": "codex-gpt-5.5",
+  "schema_version": "axiom-encode/applied-rulespec/v1",
+  "signature": {
+    "algorithm": "hmac-sha256",
+    "key_id": "axiom-encode-apply-v1",
+    "value": "1c3f1c91ce8944c5f9bdd746cdee0bd429d38eb93b1c63c98b014b619ed9181e"
+  },
+  "tool": "axiom-encode encode --apply",
+  "trace_file": "/tmp/axiom-encode-encodings/traces/codex-gpt-5.5/us-nc-manual-dhhs-fns-fns-260-able-bodied-adults-without-dependents-page-8.json",
+  "trace_sha256": "5396de73990c95af1bb20694d96f9c0ee971235916893ea8aa93ae63899b949c"
+}
